@@ -74,6 +74,70 @@ section h3 {
   margin-bottom: 8px;
 }
 
+/* Novo: estilos para a seção de participantes */
+.activity-card .participants {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #e0e0e0;
+}
+
+.activity-card .participants h5 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #1a237e;
+  font-weight: 600;
+}
+
+.activity-card .participants-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.activity-card .participants-list li {
+  margin: 0;
+  list-style: none; /* transformar em "badges" */
+}
+
+/* Badge-style para participantes (fica como chips bonitos) */
+.activity-card .participant-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  background: linear-gradient(180deg, #ffffff, #eef1ff);
+  border: 1px solid #d0d8ff;
+  color: #1a237e;
+  border-radius: 16px;
+  font-size: 13px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+
+/* delete/remove button next to participant badges */
+.participant-remove {
+  margin-left: 6px;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0 6px;
+  line-height: 1;
+  border-radius: 8px;
+}
+.participant-remove:hover {
+  background: rgba(198,40,40,0.08);
+}
+
+/* Mensagem quando não houver participantes */
+.activity-card .no-participants {
+  font-style: italic;
+  color: #666;
+  font-size: 13px;
+  margin: 0;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
